@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        background-image: url("https://cdn.glitch.global/a3eca694-aea7-4336-bc1e-8cac0e82e882/isaa.gif?v=1648866160999");
+      }
+    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- This is the start of content for our page -->
+    <h1 class="title">Light and Sound Memory Game</h1>
+    <p>
+      Welcome to the game, Animal Cross Edition! Catch the villagers by pressing
+      the buttons!
+    </p>
+    <button id="startBtn" onclick="startGame()">Start</button>
+    <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
+    <p>Countdown:</p>
+    <p id="countdown"></p>
+    <p>Guesses Left:</p>
+    <p id="guessesleft"></p>
+    <div id="gameButtonArea">
+      <button
+        id="button1"
+        onclick="guess(1)"
+        onmousedown="startTone(1)"
+        onmouseup="stopTone()"
+        style="border: indianred"
+      >
+        <img
+          id="picture1"
+          src="https://cdn.glitch.global/a3eca694-aea7-4336-bc1e-8cac0e82e882/isabelle%20circle.png?v=1648614995064"
+          width="160"
+          height="155"
+        />
+      </button>
+      <button
+        id="button2"
+        onclick="guess(2)"
+        onmousedown="startTone(2)"
+        onmouseup="stopTone()"
+        style="border: orangered"
+      >
+        <img
+          id="picture2"
+          src="https://cdn.glitch.global/a3eca694-aea7-4336-bc1e-8cac0e82e882/blanthers.png?v=1648614108036"
+          width="160"
+          height="155"
+        />
+      </button>
+      <button
+        id="button3"
+        onclick="guess(3)"
+        onmousedown="startTone(3)"
+        onmouseup="stopTone()"
+        style="border: midnightblue"
+      >
+        <img
+          id="picture3"
+          src="https://cdn.glitch.global/a3eca694-aea7-4336-bc1e-8cac0e82e882/tom%20nook.png?v=1648614359334"
+          width="160"
+          height="160"
+        />
+      </button>
+      <button
+        id="button4"
+        onclick="guess(4)"
+        onmousedown="startTone(4)"
+        onmouseup="stopTone()"
+        style="border: darkolivegreen"
+      >
+        <img
+          id="picture4"
+          src="https://cdn.glitch.global/a3eca694-aea7-4336-bc1e-8cac0e82e882/celestecircle.png?v=1648615074315"
+          width="160"
+          height="160"
+        />
+      </button>
+      <button
+        id="button5"
+        onclick="guess(5)"
+        onmousedown="startTone(5)"
+        onmouseup="stopTone()"
+        style="border: orchid"
+      >
+        <img
+          id="picture5"
+          src="https://cdn.glitch.global/a3eca694-aea7-4336-bc1e-8cac0e82e882/11zon_cropped-3.png?v=1648614660820"
+          width="160"
+          height="160"
+        />
+      </button>
+      <button
+        id="button6"
+        onclick="guess(6)"
+        onmousedown="startTone(6)"
+        onmouseup="stopTone()"
+        style="border: sienna"
+      >
+        <img
+          id="picture6"
+          src="https://cdn.glitch.global/a3eca694-aea7-4336-bc1e-8cac0e82e882/11zon_cropped-4.png?v=1648614669238"
+          width="160"
+          height="160"
+        />
+      </button>
+    </div>
+  </body>
+</html>
